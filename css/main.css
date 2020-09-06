@@ -1,0 +1,387 @@
+/*****BASE STYLES*****/
+
+
+html {
+     font-size: 16px;
+}
+
+body {
+  color: #2b2b2b;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.content-wrapper {
+     max-width: 1200px;
+     width: 90%; 
+     margin: 0 auto;
+ }
+
+ #about, #work, #contact {
+     display: flex;
+     justify-content: center;
+     padding: 40px 0;
+}
+ 
+
+/*==================
+ HEADER 
+===================*/ 
+
+header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     padding: 40px 0 10px; 
+     width: 100%;
+}
+
+header h1 {
+     color: #BBC085;
+     font-family: 'Lora', serif;
+     font-size: 1.875em;
+     text-align: center;
+     margin: 0;
+    width: 100%;
+}
+
+header nav {
+     width: 70%;
+}
+
+nav ul {
+     display: flex;
+     justify-content: center;
+     padding: 0;
+     width: 100%;
+}
+
+nav ul li {
+     list-style: none;
+}
+
+nav ul li a {
+     color: #828282;
+     font-size: 1.125em;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 10px;
+}
+
+.hero-section {
+     background: url('../img/hero.png');
+     background-position: center;
+     background-size: cover;
+     min-height: 600px;
+ }
+   
+
+.hero-section h2 {
+      color: #9b9b9b;
+      font-family: 'Lora', serif;
+      font-size: 2.25em;
+      line-height: 40px;
+      margin: 0 40px;
+      padding: 20px 0;
+}
+
+
+.hero-section h2 span {
+       color: #2b2b2b;   
+}
+
+/*==================
+ ABOUT 
+===================*/ 
+   
+
+
+#about h2 {
+     font-family: 'Lora', serif;
+     font-size: 1.5em;
+}
+
+#about p {
+     color:#7F7F7F;
+     font-family: Source San Pro;
+     font-size: 1.125em;
+     line-height: 30px;
+}
+
+
+/*==================
+ WORK
+===================*/ 
+
+#work {
+    background: #f9ceb7;
+    /* padding: 40px 20px; */
+}
+
+.work-content {
+     text-align: center;
+     padding-top: 20px;
+}
+
+
+#work h3 {
+     font-size: 1.5em;
+     line-height: 32px;
+     text-align: center;
+    
+}
+
+#work p {
+     font-family: 'Lora', serif;
+     font-size: 1.125em;
+     line-height: 30px;
+}
+
+/*==================
+ FOOTER
+===================*/ 
+
+
+#contact {
+     background: #EBEBEB;
+}
+
+.contact-content {
+     text-align: center;
+}
+
+#contact img#contact-img {
+     border: 12px solid #ffffff;
+     width: 80%;
+     max-width: 100%;
+     height: auto;
+}
+
+.contact-image {
+     padding: 20px 20px 10px;
+     text-align: center;
+}
+#contact #envelope {
+    padding: 0 5px;
+    width: 10%;
+}
+
+#contact h2 {
+    font-family: Lora;
+    font-size: 1.5em;
+    line-height:44px;
+}
+
+#contact #email-header{
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height:44px;
+    margin: 0;
+}
+#contact #socialmedia-header {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height:44px;
+   
+}
+#contact a {
+    color: #C49075;
+    font-weight: bold;
+    font-size: 1.125em;
+    text-decoration:none;
+}
+
+#contact ul {
+     list-style: none;
+     margin-bottom: 0;
+     padding-bottom: 20px;
+   
+}
+#contact ul li {
+      display: inline;
+}
+#contact ul img {
+      font-size: 2em;
+      padding: 0 5px;
+}
+
+/*==================
+MEDIA QUERY - TABLET 
+==================*/
+
+@media only screen and (min-width: 768px) {
+     header {
+          display: flex;
+          width: 100%;
+     }
+     
+     header h1 {
+          width: 50%;
+     }
+     
+     header nav {
+          width: 50%;
+     }
+     
+     nav ul {
+          display: flex;
+          justify-content: center;
+          padding: 0;
+     }
+
+     .hero-section h2 {
+          padding-top: 80px;
+          width: 80%;
+     }
+     
+     #about, #work {
+          padding: 80px 40px;
+     }
+
+
+     .about-content {
+          display: flex;
+          width: 100%;
+     }
+     
+     #about p {
+          display: flex;
+          margin-right: 20px;
+          font-size: 1em;
+          line-height: 25px;
+     }
+
+     #about p:last-child  {
+          margin-right: 0;
+     }
+
+     #contact {
+          display: flex;
+     }
+
+     .footer-flex {
+          display: flex;
+     }
+
+     .contact-image {
+          width: 50%;
+     }
+
+     #contact img#contact-img {
+          display: flex;
+     }
+
+     .contact-content {
+         width: 50%;
+     
+     }
+   
+}
+
+/*==================
+MEDIA QUERY - DESKTOP 
+==================*/
+
+@media only screen and (min-width: 1200px) {
+     header {
+          width: 100%;
+          padding-top: 75px;
+     }
+     
+     header h1 {
+          display: flex;
+         justify-content: flex-start;
+     }
+     
+     header nav {
+          display: flex;
+          justify-content: flex-end;
+     }
+
+     nav ul {
+          display: flex;
+          justify-content: flex-end;
+     }
+
+     nav ul li a {
+          padding-left: 80px;
+     }
+
+     .hero-section h2 {
+          font-size: 4.5em;
+          line-height: 80px;
+          margin: 60px 0;
+          padding: 20px 0 20px 25px;
+          width: 90%;
+     }
+
+     .hero-section {
+          min-height: 800px;
+      }
+
+      #about h2 {
+           font-size: 2.25em;
+           padding-left: 50px;
+      }
+
+      #about p {
+          font-size: 1.312em;
+          line-height: 40px;
+          padding: 0 50px;
+     }
+
+     #work {
+          display: flex;
+          width: 100%;
+          padding: 115px 0;
+     }
+
+     #work .content-wrapper {
+          display: flex;
+     }
+
+     .work-content {
+          display: flex;
+          flex-flow: row wrap;
+          width: 33.3%;
+          align-items: center;
+          display: block;
+     }
+
+     #work p {
+          padding: 0 50px;
+     }
+
+     #work img {
+          padding-bottom: 30px;
+     }
+
+     #work h3 {
+          margin: 0 105px;
+     }
+
+     #contact {
+          padding: 110px 0;
+     }
+
+     #contact h2 {
+          font-size: 2.25em;
+     }
+
+     #email-header {
+          font-size: 2em;
+     }
+
+     #contact a {
+          font-size: 1.75em;
+     }
+
+     #socialmedia-header {
+          font-size: 1.813em;
+     }
+
+     #envelope {
+          height: auto;
+     }
+
+}
